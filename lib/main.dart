@@ -23,10 +23,13 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   @override
-  Widget build(BuildContext context) => Scaffold(
+  Widget build(BuildContext context) => const Scaffold(
         backgroundColor: Color(0xFF92A3AA),
         body: Center(
-          child: Container(),
+          child: CircleHighlightedDiagram(
+            height: 200,
+            highlightedPercent: 35,
+          ),
         ),
       );
 }
